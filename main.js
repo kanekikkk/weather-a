@@ -4212,7 +4212,7 @@ function addValues(domValues, place){
 async function weatherImg(weatherImgAdd, weatherCode){
 
     let respond = await fetch(`http://openweathermap.org/img/wn/${weatherCode}@2x.png`);
-    weatherImgAdd.src = respond.url;
+    weatherImgAdd.src = await respond.url;
     
 
 } 
